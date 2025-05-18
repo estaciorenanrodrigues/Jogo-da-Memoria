@@ -1,37 +1,14 @@
 <template>
-	<div class="bg-black">
-		<p>Contador: {{ contador }}</p>
-		<button
-			class="text"
-			@click="incrementar"
-		>
-			Incrementar
-		</button>
-		<h1 class="text-3xl font-bold underline text-amber-300">Hello world!</h1>
+	<div class="flex min-h-screen justify-center items-center bg-[#FAF5F1]">
+		<div class="flex flex-col w-[400px] h-[300px] justify-center">
+			<div class="text-center text-4xl font-bold mb-14">Jogo da Memoria</div>
+			<div class="flex justify-center"><LoginGoogle /></div>
+		</div>
 	</div>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed } from "vue";
-import { useStore } from "vuex";
-
-export default defineComponent({
-	name: "LoginPage",
-
-	setup() {
-		const store = useStore();
-		const contador = computed(() => store.getters.getContador);
-
-		const incrementar = () => {
-			store.dispatch("incrementar");
-		};
-
-		return {
-			contador,
-			incrementar,
-		};
-	},
-});
+<script setup lang="ts">
+import LoginGoogle from "../components/Login-google.vue";
 </script>
 
 <style></style>

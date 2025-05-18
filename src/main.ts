@@ -1,21 +1,17 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHistory } from 'vue-router';
+import vue3GoogleLogin from 'vue3-google-login'
 
-import routes from './routes/index.ts'
+import router from './routes/index.ts'
 import store from './store'
 import App from './App.vue'
 
-
 import './style.css'
-
-
-const router = createRouter({
-    history: createWebHistory(),
-    routes,
-});
 
 const app = createApp(App)
 
+app.use(vue3GoogleLogin, {
+    clientId: import.meta.env.VITE_ID_CLIENT
+})
 app.use(router)
 app.use(store);
 

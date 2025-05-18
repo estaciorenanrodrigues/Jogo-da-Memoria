@@ -1,28 +1,27 @@
 import { createStore } from "vuex";
-import type { StateInterface } from "../types/TipagemJogoMemoria";
+import type { DataGoogleInterface } from "../types";
 
-
-const state: StateInterface = {
-    count: 0,
+const state: any = {
+    dataGoogle: null,
 };
 
 const mutations = {
-    increment(state: StateInterface) {
-        state.count++;
+    set_datagoogle(state: any, value: DataGoogleInterface) {
+        state.dataGoogle = value;
     },
 };
 
 const actions = {
-    incrementar({ commit }: { commit: Function }) {
-        commit("increment");
+    execute_set_datagoogle({ commit }: { commit: Function }, value: DataGoogleInterface) {
+        commit("set_datagoogle", value);
     },
 };
 
 const getters = {
-    getContador: (state: StateInterface): number => state.count,
+    get_credential: (dataGoogle: DataGoogleInterface): DataGoogleInterface => dataGoogle,
 };
 
-const store = createStore<StateInterface>({
+const store = createStore({
     state,
     mutations,
     actions,
