@@ -18,7 +18,6 @@
 	</div>
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
 import Button from "../components/Button.vue";
 import GameBoard from "../components/GameBoard.vue";
 import Title from "../components/Title.vue";
