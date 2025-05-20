@@ -2,6 +2,7 @@ import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 
 import Login from "../pages/Login.vue";
 import Play from '../pages/Play.vue';
+import { useServices } from '../services';
 
 const routes: Array<RouteRecordRaw> = [
     {
@@ -25,14 +26,11 @@ const router = createRouter({
     routes,
 });
 
-const isAuthenticated = () => {
-    return
-    const value = localStorage.getItem('key')
-}
 
 router.beforeEach((to, from, next) => {
+    const { getDataStorage } = useServices();
     if (to.meta.requiresAuth) {
-        const token = localStorage.getItem('key');
+        const token = getDataStorage("key");
         if (token) {
             next();
         } else {

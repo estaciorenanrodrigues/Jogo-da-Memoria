@@ -1,5 +1,26 @@
-# Vue 3 + TypeScript + Vite
+# 🚀 Jogo da Memoria
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este é um projeto utilizando Vue3 + tupescript desenvolvido para teste dev na Try. Ele utiliza Vue 3 com Typescript.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🔥 Tecnologias
+
+- **Vue 3** (Composition API e `<script setup>`)
+- **Vuex** (Gerenciar estados)
+- **Vite** (Compilação super rápida)
+- **TailwindCSS** (Estilização ágil e flexível)
+- **TypeScript** (Se aplicável)
+
+## 📦 Introdução
+
+Usabilidade: Para jogar o usuário dev logar com sua conta google, após ter logado será direcionado para uma tela aonde poderá escolher a quantidade de pares, depois de escolher o o jogo iniciará, o usuário poderá reiniciar o jogo quando quiser, quando todos os pares forem concluídos irá ser apresentado um resumo com tempo e numero de tentativas.
+
+## 📦 Instalação
+
+Clone o repositório e instale as dependências:
+
+```bash
+git clone https://github.com/estaciorenanrodrigues/Jogo-da-Memoria.git
+cd Jogo-da-Memoria-main
+npm install our npm i
+npm install npm run dev
+```
