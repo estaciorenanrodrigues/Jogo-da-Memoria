@@ -12,7 +12,6 @@ const newStore = useStore();
 const { setDataStorage } = useServices();
 
 const callback = (response: DataGoogleInterface) => {
-	console.log(response);
 	if (response.credential) {
 		newStore.dispatch("execute_set_datagoogle", response);
 		router.push("/play");

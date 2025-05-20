@@ -24,11 +24,12 @@ import Title from "../components/Title.vue";
 import ButtonModeDark from "../components/ButtonModeDark.vue";
 
 import { useServices } from "../services";
+import router from "../routes";
 
 const { deleteDataStorage } = useServices();
 
 const removeUseLogin = () => {
 	deleteDataStorage();
-	window.location.reload();
+	router.push("");
 };
 </script>
