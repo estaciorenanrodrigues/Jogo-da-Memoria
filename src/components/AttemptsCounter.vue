@@ -1,5 +1,5 @@
 <template>
-	<p>Tentativas: {{ count }}</p>
+	<p class="dark:bg-black dark:text-amber-50">Tentativas: {{ count }}</p>
 </template>
 
 <script setup lang="ts">

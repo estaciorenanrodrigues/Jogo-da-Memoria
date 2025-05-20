@@ -1,9 +1,13 @@
 <template>
 	<div class="flex flex-col justify-center items-center">
-		<h1 class="font-bold text-4xl py-12">Parabéns! 🎉</h1>
-		<h2 class="font-bold text-3xl">🎊 Jogo concluído 🎈</h2>
-		<p>Tempo gasto: {{ timer }}s</p>
-		<p>Tentativas: {{ count }}</p>
+		<h1 class="font-bold text-4xl py-12 dark:bg-black dark:text-amber-50">
+			Parabéns! 🎉
+		</h1>
+		<h2 class="font-bold text-3xl dark:bg-black dark:text-amber-50">
+			🎊 Jogo concluído 🎈
+		</h2>
+		<p class="dark:bg-black dark:text-amber-50">Tempo gasto: {{ timer }}s</p>
+		<p class="dark:bg-black dark:text-amber-50">Tentativas: {{ count }}</p>
 		<Button
 			class="w-[200px]"
 			label="Jogar novamente"

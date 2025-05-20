@@ -5,7 +5,9 @@
 			v-if="!level && !playEnd"
 		>
 			<div>
-				<span class="font-bold">Ecolhas a quantidade de pares de cartas</span>
+				<span class="font-bold dark:text-amber-50"
+					>Ecolhas a quantidade de pares de cartas</span
+				>
 			</div>
 			<div class="flex flex-row w-[250px] justify-between py-9 gap-2 font-bold">
 				<button
@@ -29,10 +31,10 @@
 		</div>
 		<div
 			v-if="level"
-			class="grid gap-2.5"
+			class="grid gap-2"
 			:class="{
-				'grid-cols-4 [grid-template-columns:repeat(4,80px)]': level === 16,
-				'grid-cols-6 [grid-template-columns:repeat(6,80px)]': level === 36,
+				'grid-cols-4 [grid-template-columns:repeat(4,120px)]': level === 16,
+				'grid-cols-6 [grid-template-columns:repeat(6,120px)]': level === 36,
 			}"
 		>
 			<Card
@@ -179,7 +181,7 @@ const handleFlip = (id: number) => {
 
 		setTimeout(() => {
 			flippedCards.value = [];
-		}, 1000);
+		}, 500);
 	}
 };
 </script>

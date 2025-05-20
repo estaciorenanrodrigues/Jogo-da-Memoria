@@ -1,5 +1,5 @@
 <template>
-	<p>Tempo: {{ timer }}</p>
+	<p class="dark:bg-black dark:text-amber-50">Tempo: {{ timer }}</p>
 </template>
 
 <script setup lang="ts">

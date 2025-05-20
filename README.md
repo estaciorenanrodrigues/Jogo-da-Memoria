@@ -24,3 +24,10 @@ cd Jogo-da-Memoria-main
 npm install our npm i
 npm install npm run dev
 ```
+
+## 📦 Layouts
+
+![Minha Imagem](./src/assets/login%20light.PNG)
+![Minha Imagem](./src/assets/Configuracao.PNG)
+![Minha Imagem](./src/assets/tabuleiro.PNG)
+![Minha Imagem](./src/assets/congratulations.PNG)

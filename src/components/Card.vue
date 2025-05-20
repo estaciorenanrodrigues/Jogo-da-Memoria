@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="flex w-12 h-12 items-center justify-center text-2xl cursor-pointer rounded-md"
+		class="flex w-24 h-24 items-center justify-center text-2xl cursor-pointer rounded-md 2xl:w-24 2xl:h-24 sm:w-14 sm:h-14"
 		:class="{
 			'bg-[#fff]': props.isFlipped,
 			'bg-[#E6F0F5]': !props.isFlipped,

@@ -1,6 +1,6 @@
 <template>
 	<button
-		class="flex justify-center items-center w-14 h-[30px] my-4 mr-4 rounded-xl cursor-pointer bg-[#c5cccf] font-bold"
+		class="flex justify-center items-center w-14 h-[30px] my-4 mr-4 rounded-xl cursor-pointer bg-[#D1D5DC] font-bold"
 		@click="props.onButtonClick"
 	>
 		{{ label }}
