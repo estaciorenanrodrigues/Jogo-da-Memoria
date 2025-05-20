@@ -6,7 +6,7 @@ import { useServices } from '../services';
 
 const routes: Array<RouteRecordRaw> = [
     {
-        path: '',
+        path: '/',
         name: "login",
         component: Login,
     },
@@ -35,7 +35,7 @@ router.beforeEach((to, from, next) => {
         if (token) {
             next();
         } else {
-            next('');
+            next('/');
         }
     } else {
         next();

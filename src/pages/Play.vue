@@ -30,6 +30,6 @@ const { deleteDataStorage } = useServices();
 
 const removeUseLogin = () => {
 	deleteDataStorage();
-	router.push("");
+	router.push("/");
 };
 </script>
