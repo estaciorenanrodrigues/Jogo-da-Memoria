@@ -27,7 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, ref } from "vue";
+import { defineProps } from "vue";
 
 const props = defineProps<{
 	card: { value: string; id: number };

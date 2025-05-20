@@ -27,7 +27,6 @@ import ButtonModeDark from "../components/ButtonModeDark.vue";
 import { useServices } from "../services";
 
 const { deleteDataStorage } = useServices();
-const isDark = ref<boolean>(false);
 
 const removeUseLogin = () => {
 	deleteDataStorage();

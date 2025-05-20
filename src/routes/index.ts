@@ -28,6 +28,7 @@ const router = createRouter({
 
 
 router.beforeEach((to, from, next) => {
+    from.meta
     const { getDataStorage } = useServices();
     if (to.meta.requiresAuth) {
         const token = getDataStorage("key");

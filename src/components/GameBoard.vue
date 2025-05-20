@@ -166,7 +166,11 @@ const handleFlip = (id: number) => {
 
 		store.commit("increaseAttempts");
 
-		if (firstCard?.value === secondCard?.value) {
+		if (
+			firstCard?.value !== undefined &&
+			secondCard?.value !== undefined &&
+			firstCard.value === secondCard.value
+		) {
 			matchedCards.value.push(firstCard?.value);
 			matchedCards.value = [...new Set(matchedCards.value)];
 		}

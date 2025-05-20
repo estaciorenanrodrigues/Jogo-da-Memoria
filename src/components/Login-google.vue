@@ -5,22 +5,18 @@
 import { useStore } from "vuex";
 
 import router from "../routes";
-import type { DataGoogleInterface } from "../types";
 import { useServices } from "../services";
+import type { DataGoogleInterface } from "../types";
 
 const newStore = useStore();
-const { setDataStorage, getUserInfo } = useServices();
+const { setDataStorage } = useServices();
 
 const callback = (response: DataGoogleInterface) => {
+	console.log(response);
 	if (response.credential) {
 		newStore.dispatch("execute_set_datagoogle", response);
 		router.push("/play");
 		setDataStorage("key", response.credential);
-		getUserInfo(
-			response.clientId,
-			import.meta.env.VITE_KEY_SECRET,
-			response.credential
-		);
 	}
 };
 </script>

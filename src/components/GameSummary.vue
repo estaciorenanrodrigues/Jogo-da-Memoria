@@ -23,7 +23,7 @@ import { useServices } from "../services";
 import Button from "./Button.vue";
 
 const { formatTime } = useServices();
-const props = defineProps<{
+defineProps<{
 	onButtonClick?: () => void;
 }>();
 
