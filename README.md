@@ -25,6 +25,8 @@ npm install our npm i
 npm install npm run dev
 ```
 
+Link: [Jogo da Memoria](https://jogo-da-memoria-wine-alpha.vercel.app/play)
+
 ## 📦 Layouts
 
 ![Minha Imagem](./src/assets/login%20light.PNG)
